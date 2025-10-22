@@ -1,0 +1,123 @@
+{
+  "datasets": [
+    {
+      "label": "Active Developers",
+      "data": [
+        { "date": "2025-06-30", "value": 36 },
+        { "date": "2025-09-30", "value": 550 }
+      ],
+      "color": "rgba(255, 99, 132, 1)"
+    },
+    {
+      "label": "Engaged Developers",
+      "data": [
+        { "date": "2025-06-30", "value": 255 },
+        { "date": "2025-09-30", "value": 727 }
+      ],
+      "color": "rgba(255, 206, 86, 1)"
+    },
+    {
+      "label": "Smart Contract Deploys",
+      "data": [
+        { "date": "2025-01-06", "value": 82 },
+        { "date": "2025-01-13", "value": 116 },
+        { "date": "2025-01-20", "value": 136 },
+        { "date": "2025-01-27", "value": 261 },
+        { "date": "2025-02-03", "value": 26 },
+        { "date": "2025-02-10", "value": 241 },
+        { "date": "2025-02-17", "value": 64 },
+        { "date": "2025-02-24", "value": 305 },
+        { "date": "2025-03-03", "value": 383 },
+        { "date": "2025-03-10", "value": 803 },
+        { "date": "2025-03-17", "value": 63 },
+        { "date": "2025-03-24", "value": 359 },
+        { "date": "2025-03-31", "value": 267 },
+        { "date": "2025-04-07", "value": 105 },
+        { "date": "2025-04-14", "value": 192 },
+        { "date": "2025-04-21", "value": 430 },
+        { "date": "2025-04-28", "value": 122 },
+        { "date": "2025-05-05", "value": 81 },
+        { "date": "2025-05-12", "value": 743 },
+        { "date": "2025-05-19", "value": 725 },
+        { "date": "2025-05-26", "value": 403 },
+        { "date": "2025-06-02", "value": 515 },
+        { "date": "2025-06-09", "value": 452 },
+        { "date": "2025-06-16", "value": 547 },
+        { "date": "2025-06-23", "value": 681 },
+        { "date": "2025-06-30", "value": 457 },
+        { "date": "2025-07-07", "value": 529 },
+        { "date": "2025-07-14", "value": 515 },
+        { "date": "2025-07-21", "value": 524 },
+        { "date": "2025-07-28", "value": 576 },
+        { "date": "2025-08-04", "value": 732 },
+        { "date": "2025-08-11", "value": 143 },
+        { "date": "2025-08-18", "value": 110 },
+        { "date": "2025-08-25", "value": 727 },
+        { "date": "2025-09-01", "value": 251 },
+        { "date": "2025-09-08", "value": 629 },
+        { "date": "2025-09-15", "value": 179 },
+        { "date": "2025-09-22", "value": 88 },
+        { "date": "2025-09-29", "value": 912 }
+      ],
+      "color": "rgba(153, 102, 255, 1)"
+    },
+    {
+      "label": "Validators",
+      "data": [
+        { "date": "2025-05-19", "value": 1 },
+        { "date": "2025-05-26", "value": 17 },
+        { "date": "2025-06-02", "value": 38 },
+        { "date": "2025-06-09", "value": 41 },
+        { "date": "2025-06-16", "value": 43 },
+        { "date": "2025-06-23", "value": 50 },
+        { "date": "2025-06-30", "value": 65 },
+        { "date": "2025-07-07", "value": 68 },
+        { "date": "2025-07-14", "value": 72 },
+        { "date": "2025-07-21", "value": 73 },
+        { "date": "2025-07-28", "value": 79 },
+        { "date": "2025-08-04", "value": 84 },
+        { "date": "2025-08-11", "value": 86 },
+        { "date": "2025-08-18", "value": 88 },
+        { "date": "2025-08-25", "value": 95 },
+        { "date": "2025-09-01", "value": 102 },
+        { "date": "2025-09-08", "value": 105 },
+        { "date": "2025-09-15", "value": 108 },
+        { "date": "2025-09-22", "value": 119 },
+        { "date": "2025-09-29", "value": 121 }
+      ],
+      "color": "rgba(255, 159, 64, 1)"
+    }
+  ],
+  "events": [
+    {
+      "label": "Mini DApp Virtual Hackathon",
+      "startDate": "2025-06-23",
+      "endDate": "2025-08-25"
+    },
+    {
+      "label": "Midnight Hackathon - Buenos Aires",
+      "startDate": "2025-08-23",
+      "endDate": "2025-08-24"
+    },
+    {
+      "label": "DEV x Midnight “Privacy First” Challenge",
+      "startDate": "2025-08-20",
+      "endDate": "2025-09-07"
+    },
+    {
+      "label": "DEGA AI Hackathon",
+      "startDate": "2025-09-22",
+      "endDate": "2025-09-29"
+    },
+    {
+      "label": "Midnight Hackathon (with MLH)",
+      "startDate": "2025-09-26",
+      "endDate": "2025-09-28"
+    },
+    {
+      "label": "Midnight Summit Hackathon",
+      "startDate": "2025-11-17",
+      "endDate": "2025-11-19"
+    }
+  ]
+}

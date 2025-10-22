@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MN Pulse</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body class="bg-white text-black font-sans p-5">
+
+    <h1 class="text-center text-4xl font-bold text-black my-8">
+        MN Pulse
+    </h1>
+
+    <div class="text-center mb-8 space-y-4 md:space-y-0 md:space-x-4">
+        <label for="yearFilter" class="font-bold text-gray-700">Filter by Year:</label>
+        <select id="yearFilter" class="p-2 rounded-lg border border-gray-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-black">
+            <option value="all">All Years</option>
+            </select>
+        
+        <label for="quarterFilter" class="font-bold text-gray-700 ml-0 md:ml-4">Filter by Quarter:</label>
+        <select id="quarterFilter" class="p-2 rounded-lg border border-gray-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-black">
+            <option value="all">All Quarters</option>
+            <option value="1">Q1 (Jan-Mar)</option>
+            <option value="2">Q2 (Apr-Jun)</option>
+            <option value="3">Q3 (Jul-Sep)</option>
+            <option value="4">Q4 (Oct-Dec)</option>
+        </select>
+        
+        <label for="monthFilter" class="font-bold text-gray-700 ml-0 md:ml-4">Month-over-Month:</label>
+        <select id="monthFilter" class="p-2 rounded-lg border border-gray-300 bg-white text-black focus:outline-none focus:ring-2 focus:ring-black">
+            <option value="all">All Months</option>
+            <option value="0-1">Jan-Feb</option>
+            <option value="1-2">Feb-Mar</option>
+            <option value="2-3">Mar-Apr</option>
+            <option value="3-4">Apr-May</option>
+            <option value="4-5">May-Jun</option>
+            <option value="5-6">Jun-Jul</option>
+            <option value="6-7">Jul-Aug</option>
+            <option value="7-8">Aug-Sep</option>
+            <option value="8-9">Sep-Oct</option>
+            <option value="9-10">Oct-Nov</option>
+            <option value="10-11">Nov-Dec</option>
+        </select>
+    </div>
+
+    <div class="w-11/12 max-w-7xl mx-auto my-6">
+        <div id="aggregate-chart-container" class="bg-white p-4 md:p-6 rounded-xl shadow-lg border border-gray-200">
+            
+            <p class="text-gray-600 text-sm mb-4 max-w-3xl">
+                <strong>What is the Aggregate Activity Index?</strong> This chart shows a single line representing the total "activity" across all metrics. It's calculated by adding the normalized (0-100) scores of all metrics together for any given day. A spike here indicates high performance across multiple areas, and the shaded regions show how this index changes during events.
+            </p>
+            
+            <canvas id="aggregateChart"></canvas>
+        </div>
+    </div>
+
+    <div class="w-11/12 max-w-7xl mx-auto my-6">
+        <div id="summary-chart-container" class="bg-white p-4 md:p-6 rounded-xl shadow-lg border border-gray-200">
+            
+            <p class="text-gray-600 text-sm mb-4 max-w-3xl">
+                <strong>What is a normalized trend?</strong> Since our metrics have very different scales (e.g., "Validators" maxes out at 121 while "Deploys" hits 912), plotting them on one chart makes the smaller metrics look like a flat line. This chart "normalizes" each metric, rescaling its own data to fit a 0-100 range (from its lowest to its highest point). This lets you compare the <strong>relative change and growth trend</strong> of all metrics against each other, even if their raw numbers are wildly different.
+            </p>
+            
+            <canvas id="summaryChart"></canvas>
+        </div>
+    </div>
+
+    <div id="chart-gallery" class="grid grid-cols-1 gap-8 w-11/12 max-w-7xl mx-auto my-6">
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
